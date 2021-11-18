@@ -9,7 +9,7 @@ Note: This requires git to be installed and in path.
 
 example:
 ```
-python3 gitcloneuser.py -u stagefright071
+python3 gitcloneuser.py -u compromyse
 ```
 
 ### gitpull.py
