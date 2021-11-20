@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import os
+
+path = '/opt/git/LinEnum'
+itemPath = f'{path}/LinEnum.sh'
+cdir = os.getcwd()
+
+os.chdir(path)
+os.system('git pull')
+
+os.system(f'cp {itemPath} {cdir}')
