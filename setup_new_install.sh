@@ -2,10 +2,11 @@ echo 'Run this script in BASH'
 
 # Install packages
 sudo apt-get install forensic* gobuster bsdgames \
-	audacity obs-studio kdenlive gimp \
+	audacity obs-studio kdenlive gimp thonny \
 	zsh git curl \
 	build-essential wine \
 	virtualbox virtualbox-ext-pack virtualbox-guest-additions-iso vagrant \
+	python2 python3-pip
 
 # Install VSCode
 wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 -O code.deb
