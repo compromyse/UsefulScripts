@@ -63,4 +63,9 @@ sudo apt install --install-recommends winehq-devel
 sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
 sudo systemctl enable --now libvirtd
 
+# Install regolith desktop
+sudo add-apt-repository ppa:regolith-linux/release
+sudo apt install regolith-desktop-mobile
+sudo apt install regolith-desktop-complete
+
 echo 'REBOOT NOW PLEASE'
