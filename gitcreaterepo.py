@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from github import Github
 import argparse
 import os

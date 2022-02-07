@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-import os
+import requests
 
-path = '/opt/git/PEASS-ng/linPEAS'
-itemPath = f'{path}/linpeas.sh'
-cdir = os.getcwd()
+def download(url):
+    r = requests.get(url)
+    return r.text
 
-os.chdir(path)
-os.system('git pull')
-
-os.system(f'cp {itemPath} {cdir}')
+with open('linpeas.sh', 'w') as l:
+    l.write(download('https://github.com/carlospolop/PEASS-ng/releases/latest/download/linpeas.sh'))
