@@ -29,4 +29,4 @@ repo.create_file("README.md", "initial upload", f'# {repo.name}')
 
 os.system(f'git clone {repo.clone_url}')
 
-print(f'\n[+] Link to repository: {repo.url}')
+print(f'\n[+] Link to repository: {repo.html_url}')
