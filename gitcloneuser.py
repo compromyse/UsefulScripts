@@ -15,7 +15,7 @@ repos_list = json.loads(requests.get(f'https://api.github.com/users/{user}/repos
 
 for i in range(0,len(repos_list)):
     try:
-        url = repos_list[i]['html_url']
+        url = repos_list[i]['ssh_url']
     except:
         print('An error occoured. Please check the username again.')
         sys.exit(1)
