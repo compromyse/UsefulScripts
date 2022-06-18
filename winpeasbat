@@ -5,5 +5,5 @@ def download(url):
     r = requests.get(url)
     return r.text
 
-with open('linpeas.sh', 'w') as l:
+with open('winpeas.bat', 'w') as l:
     l.write(download('https://github.com/carlospolop/PEASS-ng/releases/latest/download/winPEAS.bat'))
